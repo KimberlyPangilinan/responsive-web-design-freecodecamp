@@ -1,0 +1,64 @@
+<!doctype html/>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">EventQuest Survey Form</h1>
+  <p id="description">Help us improve your EventQuest experience!</p>
+  <form action="" id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name: 
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+      </label>
+      <label id="email-label" for="email">Email: 
+        <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+      </label>
+      <label id="number-label" for="number">Age: 
+        <input min="14" max="120" type="number" id="number" placeholder="Enter your age" name="userid" required/>
+      </label>      
+      <label>Which option best describes your current role?
+        <select id="dropdown">
+          <option  selected hidden disabled>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+           <option>Full Time Learner</option>
+        </select>
+      </label>  
+      <label>Would you recommend freeCodeCamp to a friend?
+        <label for="definitely">
+         <input id="definitely" type="radio" name="recommend" value="definitely" class="inline" /> Definitely
+        </label>
+        <label for="maybe">
+          <input id="maybe" value="maybe" type="radio" name="recommend" class="inline" /> Maybe
+        </label>
+        <label for="not">
+          <input id="not" value="not" type="radio" name="recommend" class="inline" /> Not Sure
+        </label>   
+      </label>
+      <label for="">What would you like to see improved? (Check all that apply)
+        <label for="user-experience">
+          <input type="checkbox" id="user-experience" value="user-experience" class="inline" name="improvement"/> User Experience
+        </label>
+        <label for="user-interface">
+          <input type="checkbox" id="user-interface" value="user-interface" class="inline" name="improvement"/> User Interface
+        </label>
+        <label for="functionalities">
+          <input type="checkbox" id="functionalities" value="functionalities" class="inline" name="functionalities"/> Functionalities
+        </label>
+        <label for="security">
+          <input type="checkbox" id="security" value="functionalities" class="inline" name="security"/> Security
+        </label>
+      </label>
+      <label for="suggestions"> Any comments or suggestions?
+          <textarea id="suggestions" name="suggestions" rows="10" placeholder="Enter your suggestions"/></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit"/>
+    </fieldset>
+
+  </form>
+</body>
+</html>
